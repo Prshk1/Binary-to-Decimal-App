@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
                     findViewById<TextView>(R.id.txt_bit1)  // 1 (LSB)
                 )
 
-        // Final decimal result
+                 // Final decimal result
                 val txtDecimalResult = findViewById<TextView>(R.id.txt_decimalResult)
                 val btnFind = findViewById<Button>(R.id.btn_find)
 
@@ -106,11 +106,11 @@ class MainActivity : AppCompatActivity() {
                 }
 
 
-        /*
-         * =========================
-         * Attach watchers to inputs
-         * =========================
-         */
+                /*
+                * =========================
+                * Attach watchers to inputs
+                * =========================
+                */
                 setupBinaryWatcher(bin128, dec128, 128)
                 setupBinaryWatcher(bin64,  dec64,  64)
                 setupBinaryWatcher(bin32,  dec32,  32)
@@ -159,5 +159,37 @@ class MainActivity : AppCompatActivity() {
                     // Display final decimal result
                     txtDecimalResult.text = total.toString()
                 }
+
+        val btnClear = findViewById<Button>(R.id.btn_clear)
+
+        btnClear.setOnClickListener {
+            // Reset all binary inputs to "0"
+            bin128.setText("0")
+            bin64.setText("0")
+            bin32.setText("0")
+            bin16.setText("0")
+            bin8.setText("0")
+            bin4.setText("0")
+            bin2.setText("0")
+            bin1.setText("0")
+
+            // Reset per-bit decimal TextViews
+            dec128.text = "0"
+            dec64.text  = "0"
+            dec32.text = "0"
+            dec16.text = "0"
+            dec8.text  = "0"
+            dec4.text  = "0"
+            dec2.text  = "0"
+            dec1.text  = "0"
+
+            // Reset bit overview to 0
+            for (bitView in bitViews) {
+                bitView.text = "0"
+            }
+
+            // Reset final decimal result
+            txtDecimalResult.text = "0"
         }
     }
+}
