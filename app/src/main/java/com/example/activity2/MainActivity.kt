@@ -191,5 +191,20 @@ class MainActivity : AppCompatActivity() {
             // Reset final decimal result
             txtDecimalResult.text = "0"
         }
+
+        val btnAbout = findViewById<Button>(R.id.btn_about)
+        // About Button (Popup Dialog)
+        btnAbout.setOnClickListener {
+            val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("About")
+                .setMessage("Created by:\nCarl Alfred G. Chan\nBSIT - 405")
+                .setCancelable(false) // Prevent closing without pressing button
+                .setPositiveButton("Close") { dialogInterface, _ ->
+                    dialogInterface.dismiss() // Close dialog
+                }
+                .create()
+
+            dialog.show()
+        }
     }
 }
