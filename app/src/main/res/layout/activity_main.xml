@@ -7,421 +7,181 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txt_decimalEquivalent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="Decimal Equivalent:  "
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_find"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txt_bit3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="50dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_decimalEquivalent"
-        app:layout_constraintEnd_toStartOf="@+id/txt_bit2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_bit1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_decimalEquivalent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_bit2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="50dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_decimalEquivalent"
-        app:layout_constraintEnd_toStartOf="@+id/txt_bit1"
-        app:layout_constraintHorizontal_bias="0.995"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_bit4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="50dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_decimalEquivalent"
-        app:layout_constraintEnd_toStartOf="@+id/txt_bit3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btn_find"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Find Decimal Equivalent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
-
-    <TextView
-        android:id="@+id/txt_bit5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="50dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_decimalEquivalent"
-        app:layout_constraintEnd_toStartOf="@+id/txt_bit4"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_bit8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="50dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_decimalEquivalent"
-        app:layout_constraintEnd_toStartOf="@+id/txt_bit7"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_bit7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="50dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_decimalEquivalent"
-        app:layout_constraintEnd_toStartOf="@+id/txt_bit6"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_bit6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="50dp"
-        android:text="0"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_decimalEquivalent"
-        app:layout_constraintEnd_toStartOf="@+id/txt_bit5"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txt_decimalResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:text="0"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_find"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
-        app:layout_constraintStart_toEndOf="@+id/txt_decimalEquivalent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_bit1"
-        app:layout_constraintVertical_bias="1.0" />
-
     <EditText
         android:id="@+id/edit_binary128"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:digits="01"
         android:ems="10"
         android:inputType="number"
-        android:digits="01"
         android:maxLength="1"
         android:text="0"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintEnd_toStartOf="@+id/edit_binary64"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
-
-    <EditText
-        android:id="@+id/edit_binary64"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="number"
-        android:digits="01"
-        android:maxLength="1"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/edit_binary128"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
-
-    <EditText
-        android:id="@+id/edit_binary32"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="number"
-        android:digits="01"
-        android:maxLength="1"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.012"
-        app:layout_constraintStart_toEndOf="@+id/edit_binary64"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
-
-    <EditText
-        android:id="@+id/edit_binary16"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="number"
-        android:digits="01"
-        android:maxLength="1"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/edit_binary32"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edit_binary8"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:digits="01"
         android:ems="10"
         android:inputType="number"
-        android:digits="01"
         android:maxLength="1"
         android:text="0"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintEnd_toStartOf="@+id/edit_binary4"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
-
-    <EditText
-        android:id="@+id/edit_binary4"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="56dp"
-        android:ems="10"
-        android:inputType="number"
-        android:digits="01"
-        android:maxLength="1"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/edit_binary8"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
-
-    <EditText
-        android:id="@+id/edit_binary2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="152dp"
-        android:ems="10"
-        android:inputType="number"
-        android:digits="01"
-        android:maxLength="1"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/edit_binary4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
-
-    <EditText
-        android:id="@+id/edit_binary1"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="56dp"
-        android:ems="10"
-        android:inputType="number"
-        android:digits="01"
-        android:maxLength="1"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/edit_binary2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal128" />
 
     <TextView
         android:id="@+id/txt_decimal128"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintEnd_toStartOf="@+id/txt_decimal64"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_binary128"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_binary128" />
 
     <TextView
-        android:id="@+id/txt_decimal64"
+        android:id="@+id/txt_bit6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
         android:text="0"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_binary64"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_bit5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_bit7"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal1" />
 
     <TextView
-        android:id="@+id/txt_decimal32"
+        android:id="@+id/txt_bit3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
         android:text="0"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_binary32"
-        app:layout_constraintVertical_bias="0.016" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_bit2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_bit4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal1" />
 
-    <TextView
-        android:id="@+id/txt_decimal16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/edit_binary1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:digits="01"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
         android:text="0"
         android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
-
-    <TextView
-        android:id="@+id/txt_decimal8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="340dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.271"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_binary8"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/txt_decimal4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504" />
-
-    <TextView
-        android:id="@+id/txt_decimal2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_binary2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal16" />
 
     <TextView
         android:id="@+id/txt_decimal1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="65dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_decimal2"
+        app:layout_constraintTop_toBottomOf="@+id/edit_binary1" />
 
-    <Button
-        android:id="@+id/btn_clear"
+    <TextView
+        android:id="@+id/txt_decimalResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Clear"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="44dp"
+        android:text="0"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_decimalEquivalent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_bit1" />
+
+    <EditText
+        android:id="@+id/edit_binary4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:digits="01"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/edit_binary2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_binary8"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal64" />
+
+    <TextView
+        android:id="@+id/txt_decimalEquivalent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:text="Decimal Equivalent:  "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_decimalResult"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_bit8" />
+
+    <EditText
+        android:id="@+id/edit_binary2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:digits="01"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/edit_binary1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_binary4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal32" />
+
+    <TextView
+        android:id="@+id/txt_decimal32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_decimal16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_decimal64"
+        app:layout_constraintTop_toBottomOf="@+id/edit_binary32" />
 
     <Button
         android:id="@+id/btn_about"
@@ -430,9 +190,231 @@
         android:text="About"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_find"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <TextView
+        android:id="@+id/txt_decimal8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_decimal4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_binary8" />
+
+    <TextView
+        android:id="@+id/txt_bit7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_bit6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_bit8"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal1" />
+
+    <TextView
+        android:id="@+id/txt_bit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_bit2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal1" />
+
+    <TextView
+        android:id="@+id/txt_bit8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_bit7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal1" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_find"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimalResult" />
+
+    <EditText
+        android:id="@+id/edit_binary32"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:digits="01"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/edit_binary16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_binary64"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_bit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_bit1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_bit3"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal1" />
+
+    <TextView
+        android:id="@+id/txt_bit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_bit3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_bit5"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal1" />
+
+    <EditText
+        android:id="@+id/edit_binary64"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:digits="01"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/edit_binary32"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_binary128"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_decimal16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="65dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_decimal32"
+        app:layout_constraintTop_toBottomOf="@+id/edit_binary16" />
+
+    <TextView
+        android:id="@+id/txt_decimal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_decimal1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_decimal4"
+        app:layout_constraintTop_toBottomOf="@+id/edit_binary2" />
+
+    <Button
+        android:id="@+id/btn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:text="Find Decimal Equivalent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_clear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimalEquivalent" />
+
+    <TextView
+        android:id="@+id/txt_bit5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_bit4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_bit6"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decimal1" />
+
+    <TextView
+        android:id="@+id/txt_decimal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_decimal2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_decimal8"
+        app:layout_constraintTop_toBottomOf="@+id/edit_binary4" />
+
+    <TextView
+        android:id="@+id/txt_decimal64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_decimal32"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_decimal128"
+        app:layout_constraintTop_toBottomOf="@+id/edit_binary64" />
+
+    <EditText
+        android:id="@+id/edit_binary16"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:digits="01"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edit_binary32"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
