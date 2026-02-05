@@ -43,16 +43,12 @@
         android:id="@+id/txt_decimal128"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="75dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_decimal64"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edit_binary128"
+        app:layout_constraintStart_toStartOf="@+id/edit_binary128"
         app:layout_constraintTop_toBottomOf="@+id/edit_binary128" />
 
     <TextView
@@ -102,20 +98,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="65dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txt_decimal2"
+        app:layout_constraintEnd_toEndOf="@+id/edit_binary1"
+        app:layout_constraintStart_toStartOf="@+id/edit_binary1"
         app:layout_constraintTop_toBottomOf="@+id/edit_binary1" />
 
     <TextView
         android:id="@+id/txt_decimalResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="36dp"
         android:text="0"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -174,13 +168,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="75dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_decimal16"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txt_decimal64"
+        app:layout_constraintEnd_toEndOf="@+id/edit_binary32"
+        app:layout_constraintStart_toStartOf="@+id/edit_binary32"
         app:layout_constraintTop_toBottomOf="@+id/edit_binary32" />
 
     <Button
@@ -199,16 +191,12 @@
         android:id="@+id/txt_decimal8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="75dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_decimal4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edit_binary8"
+        app:layout_constraintStart_toStartOf="@+id/edit_binary8"
         app:layout_constraintTop_toBottomOf="@+id/edit_binary8" />
 
     <TextView
@@ -324,13 +312,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="65dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txt_decimal32"
+        app:layout_constraintEnd_toEndOf="@+id/edit_binary16"
+        app:layout_constraintStart_toStartOf="@+id/edit_binary16"
         app:layout_constraintTop_toBottomOf="@+id/edit_binary16" />
 
     <TextView
@@ -338,13 +324,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="75dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_decimal1"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txt_decimal4"
+        app:layout_constraintEnd_toEndOf="@+id/edit_binary2"
+        app:layout_constraintStart_toStartOf="@+id/edit_binary2"
         app:layout_constraintTop_toBottomOf="@+id/edit_binary2" />
 
     <Button
@@ -378,13 +362,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="75dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_decimal2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txt_decimal8"
+        app:layout_constraintEnd_toEndOf="@+id/edit_binary4"
+        app:layout_constraintStart_toStartOf="@+id/edit_binary4"
         app:layout_constraintTop_toBottomOf="@+id/edit_binary4" />
 
     <TextView
@@ -392,13 +374,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="75dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/txt_decimal32"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txt_decimal128"
+        app:layout_constraintEnd_toEndOf="@+id/edit_binary64"
+        app:layout_constraintStart_toStartOf="@+id/edit_binary64"
         app:layout_constraintTop_toBottomOf="@+id/edit_binary64" />
 
     <EditText
