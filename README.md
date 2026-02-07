@@ -33,7 +33,6 @@ This project is designed for **educational and demonstration purposes**.
   * Per-bit decimal values
   * Binary overview
   * Final decimal result
-* About dialog showing developer information
 ---
 ## Screenshots
 ![c1773c54-feec-4a39-b55c-7792712cd377](https://github.com/user-attachments/assets/b9568eea-ef52-4195-8e6d-51bf9ee05086)
