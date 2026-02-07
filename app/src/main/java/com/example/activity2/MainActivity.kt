@@ -118,15 +118,15 @@ class MainActivity : AppCompatActivity() {
 
         // Reset all values
         btnClear.setOnClickListener {
-            // Reset all binary inputs to "0"
-            bin128.setText("0")
-            bin64.setText("0")
-            bin32.setText("0")
-            bin16.setText("0")
-            bin8.setText("0")
-            bin4.setText("0")
-            bin2.setText("0")
-            bin1.setText("0")
+            // Clear all EditText inputs
+            bin128.text.clear()
+            bin64.text.clear()
+            bin32.text.clear()
+            bin16.text.clear()
+            bin8.text.clear()
+            bin4.text.clear()
+            bin2.text.clear()
+            bin1.text.clear()
 
             // Reset per-bit decimal TextViews
             dec128.text = "0"
@@ -146,7 +146,7 @@ class MainActivity : AppCompatActivity() {
             txtDecimalResult.text = "0"
         }
 
-        // About Popup Dialog
+        // About Dialog
         btnAbout.setOnClickListener {
             val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
                 .setTitle("About")
